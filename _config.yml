@@ -1,7 +1,7 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
+title:              Alant Health
+email:              abed@alant.health
+description:        Fostering Innovations, Nurturing Health
+author:             Abed Hammoud
 baseurl:            "/startbootstrap-clean-blog-jekyll"
 url:                "https://startbootstrap.github.io"
 
@@ -9,8 +9,8 @@ url:                "https://startbootstrap.github.io"
 twitter_username:   SBootstrap
 github_username:    StartBootstrap
 facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
+instagram_username:
+linkedin_username: dr-abed-hammoud
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
