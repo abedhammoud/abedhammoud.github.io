@@ -1,8 +1,8 @@
 ###########################################################
 ### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website. When you first
-### set up your website you should go through all these settings and edit them, but after
-### the initial set up you won't need to come back to this file often.
+### This config file is meant for settings that affect your entire website. When you
+### first set up your website you should go through all these settings and edit them,
+### but after the initial set up you won't need to come back to this file often.
 ###########################################################
 
 ############################
@@ -34,11 +34,12 @@ navbar-links:
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/assets/img/avatar-icon.png"
 
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+# By default, the image is cut into a circle. You can disable this behaviour by setting
+# 'round-avatar: false'
 round-avatar: true
 
-# If you want to have an image logo in the top-left corner instead of having the title of the website,
-# then specify the following parameter
+# If you want to have an image logo in the top-left corner instead of having the title
+# of the website, then specify the following parameter
 #title-img: /path/to/image
 
 
@@ -66,7 +67,7 @@ social-network-links:
   #  snapchat: deanat78
   #  instagram: deanat78
   #  spotify: yourname
-  telephone: +14159998888
+  # telephone: +14159998888
   #  steam: deanat78
   #  twitch: yourname
   #  yelp: yourname
@@ -95,19 +96,20 @@ rss-description: This website is a virtual proof that I'm awesome
 # Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
+  facebook: false
   linkedin: true
   vk: false
   reddit: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "alant.health"
+url-pretty: "www.alant.health"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
 
-# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the
+# specified number of words
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
@@ -119,12 +121,14 @@ feed_show_tags: true
 # Add a search button to the navbar
 post_search: true
 
-# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+# Add a button in the footer to edit the current page. Only works if your website is
+# hosted on GitHub
 edit_page_button: true
 
-# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
-# If this setting is off, then long sub-menu words might get cut off
-# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+# Allow sub-menu items (second-level navigation menu items) to be longer than the
+# top-level menu If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue
+# this setting can solve
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
@@ -155,10 +159,12 @@ footer-hover-col: "#0085A1"
 #footer-img: "/assets/img/bgimage.png"
 # page-img: "/assets/img/bgimage.png"
 
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+# Suggest a colour for mobile browsers to use as the browser's theme. This is only
+# supported by a few mobile browsers.
 #mobile-theme-col: "#0085A1"
 
-# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+# For any extra visual customization, you can include additional CSS files in every
+# page on your site. List any custom CSS files here
 #site-css:
 #  - "/assets/css/custom-styles.css"
 
