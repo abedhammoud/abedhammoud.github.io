@@ -6,10 +6,10 @@ baseurl:            "/startbootstrap-clean-blog-jekyll"
 url:                "https://startbootstrap.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:
+# twitter_username:   SBootstrap
+# github_username:    StartBootstrap
+# facebook_username:  StartBootstrap
+# instagram_username:
 linkedin_username: dr-abed-hammoud
 
 # Add your google-analytics ID here to activate google analytics
