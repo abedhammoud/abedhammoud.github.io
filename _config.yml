@@ -13,7 +13,7 @@ url:                "https://startbootstrap.github.io"
 linkedin_username: dr-abed-hammoud
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   UA-116925250-1
 
 # Build settings
 markdown:           kramdown
