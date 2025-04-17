@@ -2,8 +2,8 @@ title:              Alant Health
 email:              abed@alant.health
 description:        "Fostering Innovation<br>Nurturing Health"
 author:             Alant Health
-baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+baseurl:            ""
+url:                "https://abedhammoud.github.io"
 
 # Social Profiles
 # twitter_username:   SBootstrap
