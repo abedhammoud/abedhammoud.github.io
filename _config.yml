@@ -1,4 +1,4 @@
-title:              Alant Health
+title:              Alant Nutrition & Health
 email:              abed@alant.health
 description:        "Fostering Innovation<br>Nurturing Health"
 author:             Alant Health
@@ -11,7 +11,7 @@ url:                "https://abedhammoud.github.io"
 linkedin_username: dr-abed-hammoud
 
 # Add your Google Analytics ID here to activate Google Analytics
-google_analytics:   UA-116925250-1
+# google_analytics:   UA-116925250-1
 
 # Build settings
 markdown:           kramdown
