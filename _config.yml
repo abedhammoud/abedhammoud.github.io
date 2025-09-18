@@ -1,23 +1,56 @@
-title:              Alant Nutrition & Health
-email:              toula@alant.health
-description:        "Fostering Innovation<br>Nurturing Health"
-author:             Alant Health
-baseurl:            ""
-url:                "https://abedhammoud.github.io"
+#-------------------------------
+# General Site Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Social Profiles
-# twitter_username:   SBootstrap
-# github_username:    StartBootstrap
-linkedin_username: dr-abed-hammoud
 
-# Add your Google Analytics ID here to activate Google Analytics
-# google_analytics:   UA-116925250-1
-
-# Build settings
-markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
+#-------------------------------
+# Build Settings
+markdown: kramdown
+permalink: /:title
 plugins:
-  - jekyll-feed
   - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-sitemap
+
+paginate: 12
+paginate_path: "/latest/page/:num"
+
+
+#-------------------------------
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /latest/:slug
+  authors:
+    output: true
+    permalink: /:name
+
+# Pages Path
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+
+
+sass:
+  style: compressed

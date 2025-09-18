@@ -1,64 +1,48 @@
-<!-- Footer -->
-
-<hr>
-
-<footer>
+<!-- begin footer -->
+<footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <ul class="list-inline text-center">
-          {% if site.email %}
-          <li class="list-inline-item">
-            <a href="mailto:{{ site.email | encode_email }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          <!-- {% if site.twitter_username %}
-          <li class="list-inline-item">
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %} -->
-          {% if site.linkedin_username %}
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          <!-- Added Flipboard reference -->
-          <li class="list-inline-item">
-            <a href="https://flipboard.com/@abedhammoud/alant-health-v9fnckt9y?utm_campaign=widgets&utm_medium=web&utm_source=magazine_widget">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-flipboard fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <!-- {% if site.github_username %}
-          <li class="list-inline-item">
-            <a href="https://github.com/{{ site.github_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %} -->
-        </ul>
-        <p class="copyright text-muted">Copyright &copy; 2016-{{ 'now' | date: "%Y" }} {{ site.author }} &bull; All rights reserved &bull; Switzerland</p>
+      <div class="col col-12">
+
+        <div class="footer__inner">
+          <div class="row">
+            {% include footer-widgets/widget-info.html %}
+            {% include footer-widgets/widget-recent-posts.html %}
+            {% include footer-widgets/widget-subscribe.html %}
+          </div>
+        </div>
+
+        <div class="footer__info">
+          <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.title}}</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+          <div class="footer__info__right">
+            {% if site.data.settings.color_scheme == "auto" %}
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72"/>
+                </svg>
+                <span class="toggle-text">Dark</span>
+              </div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                    <path stroke-linecap="round" d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15"/>
+                    <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z"/>
+                    <path stroke-linecap="round" d="M24 45v-3.15"/>
+                  </g>
+                </svg>
+                <span class="toggle-text">Light</span>
+              </div>
+            </div>
+            {% elsif site.data.settings.color_scheme == "light" or site.data.settings.color_scheme == "dark" %}
+            {% else %}
+            {% endif %}
+            <div class="top" title="Top"><i class="fa-solid fa-arrow-up"></i> <span class="top__text">Back to top</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </footer>
+<!-- end footer -->

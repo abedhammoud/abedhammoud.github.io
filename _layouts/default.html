@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-<head>
-  <title>{{ site.title | default: 'Website Title' }}</title>
-  {% include head.html %}
-</head>
+{% include head.html %}
 
-<body>
+<body class="{% if page.url == '/' %}home-page{% endif %}">
 
-  {% include navbar.html %}
+  {% if site.data.settings.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
 
-  {{ content }}
+  <!-- begin global wrap -->
+  <div class="global-wrap">
+  
+    {% include header.html %}
+  
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      {{ content }}
+    </main>
+    <!-- end content -->
 
-  {% include footer.html %}
+    {% include footer.html %}
+  </div>
+  <!-- end global wrap -->
 
-  {% include scripts.html %}
-
-  {% include google-analytics.html %}
-
+  <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  <script src="{{ site.baseurl }}/js/common.js"></script>
 </body>
 
 </html>
